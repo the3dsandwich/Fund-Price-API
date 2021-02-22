@@ -1,6 +1,6 @@
 # API-for-Fund-Price
 
-Get latestNAV price through an API call so you can use them anywhere
+Get latest NAV price through an API call so you can use them anywhere
 
 # Why?
 
@@ -18,9 +18,9 @@ Also, this is sort of Excel friendly if you track your investments through it.
 
 Query this:
 
-`https://fund-price-api.herokuapp.com/cnyes/https://fund.cnyes.com/detail/%E5%AF%8C%E8%98%AD%E5%85%8B%E6%9E%97%E9%BB%83%E9%87%91%E5%9F%BA%E9%87%91%E7%BE%8E%E5%85%83A%E8%82%A1/B15,232/`
+`https://fund-price-api.herokuapp.com/cnyes/https://fund.cnyes.com/detail/富蘭克林黃金基金美元A股/B15,232/`
 
-Returns this:
+Gives you this:
 
 ```json
 {
