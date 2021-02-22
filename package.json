@@ -1,0 +1,12 @@
+{
+    "name": "fund_price_tracker",
+    "version": "1.0.0",
+    "description": "Get NAV by ISIN, because I don't see an API for it.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
