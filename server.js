@@ -3,10 +3,6 @@
 const express = require("express");
 const { fetchFromCnyesURL } = require("./fetchCnyes");
 
-// Constants
-const PORT = 8080;
-const HOST = "0.0.0.0";
-
 // App
 const app = express();
 
@@ -23,5 +19,4 @@ app.get("/cnyes/:url(*)", async (req, res) => {
   res.json(data);
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.listen(process.env.PORT || 3000, () => console.log("Server is running..."));
