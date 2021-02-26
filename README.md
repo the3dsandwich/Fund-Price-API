@@ -1,4 +1,4 @@
-# API-for-Fund-Price
+# Fund-Price-API
 
 Get latest NAV price through an API call so you can use them anywhere
 
@@ -10,7 +10,7 @@ Also, this is sort of Excel friendly if you track your investments through it.
 
 # How to use
 
-1. Currently it only pulls data from [https://fund.cnyes.com](https://fund.cnyes.com), a Taiwanese site that has some data. So please go find your fund that you want to track, then **copy the full https://fund.cnyes.com/details/<fund_name>/<some_other_stuff> link**.
+1. Currently it only pulls data from [https://fund.cnyes.com](https://fund.cnyes.com), a Taiwanese site that has some data. So please go find your fund that you want to track, then **copy the full https://<span></span>fund.cnyes.com/details/<fund_name>/<some_other_stuff> link**.
 2. Put it after https://fund-price-api.herokuapp.com/. I hosted it. Please don't spam it. Or else I will be poor poor.
 3. Receive JSON if success!
 
@@ -18,7 +18,7 @@ Also, this is sort of Excel friendly if you track your investments through it.
 
 Query this:
 
-`https://fund-price-api.herokuapp.com/cnyes/https://fund.cnyes.com/detail/富蘭克林黃金基金美元A股/B15,232/`
+[https://fund-price-api.herokuapp.com/cnyes/https://fund.cnyes.com/detail/富蘭克林黃金基金美元A股/B15,232/](https://fund-price-api.herokuapp.com/cnyes/https://fund.cnyes.com/detail/富蘭克林黃金基金美元A股/B15,232/)
 
 Gives you this:
 
