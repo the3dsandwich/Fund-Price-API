@@ -1,5 +1,3 @@
-console.log("hello");
-
 const jsdom = require("jsdom");
 
 /* 
@@ -8,6 +6,7 @@ Usage: please pass in a valid https://fund.cnyes.com/detail url that points to a
 Returns fund data as object on success, fail status on error.
 */
 const fetchFromCnyesURL = async (url) => {
+  console.log(`received query url ${url}`);
   let output = {};
   try {
     const verifyDomainRegex = /https:\/\/fund.cnyes.com\/detail\/.*/g;
