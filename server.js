@@ -21,6 +21,14 @@ app.get("/cnyes/:url(*)", async (req, res) => {
   res.json(data);
 });
 
+// entry point for Cynes data, in a better entry point
+app.get("/url/:url(*)", async (req, res) => {
+  const { url } = req.params;
+  const data = await fetchFromCnyesURL(url);
+  console.log("responded with data:", data);
+  res.json(data);
+});
+
 // search for a list of funds by query
 app.get("/search/:name(*)", async (req, res) => {
   const { name } = req.params;
