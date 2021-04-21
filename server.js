@@ -1,6 +1,7 @@
 "use strict";
 
 const express = require("express");
+const { fetchBySearchCnyesFundName } = require("./fetchBySearchCnyesFundName");
 const { fetchFromCnyesURL } = require("./fetchCnyes");
 
 // App
@@ -15,6 +16,14 @@ app.get("/", (req, res) => {
 app.get("/cnyes/:url(*)", async (req, res) => {
   const { url } = req.params;
   const data = await fetchFromCnyesURL(url);
+  console.log("responded with data:", data);
+  res.json(data);
+});
+
+// entry point for direct name queue
+app.get("/:name(*)", async (req, res) => {
+  const { name } = req.params;
+  const data = await fetchBySearchCnyesFundName(name);
   console.log("responded with data:", data);
   res.json(data);
 });
